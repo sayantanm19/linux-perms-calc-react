@@ -1,0 +1,96 @@
+:root {
+  --main-bg-color: #1a242f;
+  --alt-bg-color: #161f27;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+.App {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin: 15px 0px;
+}
+
+.permission-form {
+  display: flex;
+  justify-content: center;
+}
+
+.final-display {
+  display: flex;
+  justify-content: center;
+}
+
+.form-text {
+  padding: 2px 2px 12px 2px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.form-section {
+  margin: 5px;
+  padding: 10px;
+  border: 1px dashed #dbdbdb;
+}
+
+.form-section:hover {
+  background-color: var(--alt-bg-color);
+}
+
+.bits-group {
+  display: flex;
+  justify-content: center;
+}
+
+.check-group {
+  width: 70px;
+  padding: 2px;
+}
+
+.bit-display {
+  padding: 2px 5px;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    height: initial;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-text {
+    font-size: 1.15rem;
+  }
+
+  .form-section {
+    padding: 3px;
+    margin: 3px;
+  }
+
+  .bit-display {
+    padding: 2px 3px;
+    font-size: 3rem;
+  }
+
+  .permission-form {
+    flex-direction: column;
+  }
+
+  .check-group {
+    width: 100px;
+  }
+}
